@@ -20,19 +20,19 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
- StripLTSpace - Removes Leading and Trailing spaces from given string
- StripTSpace  - Removes Trailing spaces from given string
- StripLSpace  - Removes Leading spaces from given string
- StripSpace   - Removes all spaces from given string
+StripLTSpace	- Removes Leading and Trailing spaces from given string
+StripTSpace	- Removes Trailing spaces from given string
+StripLSpace	- Removes Leading spaces from given string
+StripSpace	- Removes all spaces from given string
 
 I do these things often, and these routines tend to be about 35% faster
 than the corresponding regex methods.
 
 %description -l pl
- StripLTSpace - usuwa wiod±ce i koñcowe spacje z podanego ³añcucha
- StripTSpace  - usuwa koñcowe spacje z podanego ³añcucha
- StripLSpace  - usuwa wiod±ce spacje z podanego ³añcucha
- StripSpace   - usuwa wszystkie spacje z podanego ³añcucha
+StripLTSpace	- usuwa wiod±ce i koñcowe spacje z podanego ³añcucha
+StripTSpace	- usuwa koñcowe spacje z podanego ³añcucha
+StripLSpace	- usuwa wiod±ce spacje z podanego ³añcucha
+StripSpace	- usuwa wszystkie spacje z podanego ³añcucha
 
 Autor modu³u czêsto wykonuje te rzeczy, a te funkcje s± oko³o 35%
 szybsze od odpowiadaj±cych im metod u¿ywaj±cych wyra¿eñ regularnych.
