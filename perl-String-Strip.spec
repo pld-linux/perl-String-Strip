@@ -8,12 +8,12 @@ Summary:	String::Strip - Perl extension for fast, commonly used, string operatio
 Summary(pl):	String::Strip - rozszerzenie do szybkich, czêsto u¿ywanych operacji na ³añcuchach
 Name:		perl-String-Strip
 Version:	1.01
-Release:	2
+Release:	3
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-26
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,7 +38,8 @@ szybsze od odpowiadaj±cych im metod u¿ywaj±cych wyra¿eñ regularnych.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
@@ -53,9 +54,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_sitearch}/%{pdir}/*.pm
-%dir %{perl_sitearch}/auto/%{pdir}/%{pnam}
-%attr(755,root,root) %{perl_sitearch}/auto/%{pdir}/%{pnam}/*.so
-%{perl_sitearch}/auto/%{pdir}/%{pnam}/*.ix
-%{perl_sitearch}/auto/%{pdir}/%{pnam}/*.bs
+%{perl_vendorarch}/%{pdir}/*.pm
+%dir %{perl_vendorarch}/auto/%{pdir}/%{pnam}
+%attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.so
+%{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.ix
+%{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.bs
 %{_mandir}/man3/*
