@@ -38,7 +38,7 @@ szybsze od odpowiadaj±cych im metod u¿ywaj±cych wyra¿eñ regularnych.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
