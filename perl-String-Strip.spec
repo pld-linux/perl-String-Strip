@@ -10,7 +10,8 @@ Summary(pl):	String::Strip - rozszerzenie Perla do szybkich, czêsto u¿ywanych op
 Name:		perl-String-Strip
 Version:	1.01
 Release:	3
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a1471ad67dbb7375dd0d288026ee7122
