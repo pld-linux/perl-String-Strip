@@ -40,7 +40,7 @@ szybsze od odpowiadaj±cych im metod u¿ywaj±cych wyra¿eñ regularnych.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
