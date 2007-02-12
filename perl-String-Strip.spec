@@ -6,7 +6,7 @@
 %define		pdir	String
 %define		pnam	Strip
 Summary:	String::Strip - Perl extension for fast, commonly used, string operations
-Summary(pl):	String::Strip - rozszerzenie Perla do szybkich, czêsto u¿ywanych operacji na ³añcuchach
+Summary(pl.UTF-8):   String::Strip - rozszerzenie Perla do szybkich, czÄ™sto uÅ¼ywanych operacji na Å‚aÅ„cuchach
 Name:		perl-String-Strip
 Version:	1.01
 Release:	4
@@ -28,14 +28,14 @@ StripSpace	- Removes all spaces from given string
 I do these things often, and these routines tend to be about 35% faster
 than the corresponding regex methods.
 
-%description -l pl
-StripLTSpace	- usuwa wiod±ce i koñcowe spacje z podanego ³añcucha
-StripTSpace	- usuwa koñcowe spacje z podanego ³añcucha
-StripLSpace	- usuwa wiod±ce spacje z podanego ³añcucha
-StripSpace	- usuwa wszystkie spacje z podanego ³añcucha
+%description -l pl.UTF-8
+StripLTSpace	- usuwa wiodÄ…ce i koÅ„cowe spacje z podanego Å‚aÅ„cucha
+StripTSpace	- usuwa koÅ„cowe spacje z podanego Å‚aÅ„cucha
+StripLSpace	- usuwa wiodÄ…ce spacje z podanego Å‚aÅ„cucha
+StripSpace	- usuwa wszystkie spacje z podanego Å‚aÅ„cucha
 
-Autor modu³u czêsto wykonuje te rzeczy, a te funkcje s± oko³o 35%
-szybsze od odpowiadaj±cych im metod u¿ywaj±cych wyra¿eñ regularnych.
+Autor moduÅ‚u czÄ™sto wykonuje te rzeczy, a te funkcje sÄ… okoÅ‚o 35%
+szybsze od odpowiadajÄ…cych im metod uÅ¼ywajÄ…cych wyraÅ¼eÅ„ regularnych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
