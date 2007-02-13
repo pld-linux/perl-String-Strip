@@ -6,7 +6,7 @@
 %define		pdir	String
 %define		pnam	Strip
 Summary:	String::Strip - Perl extension for fast, commonly used, string operations
-Summary(pl.UTF-8):   String::Strip - rozszerzenie Perla do szybkich, często używanych operacji na łańcuchach
+Summary(pl.UTF-8):	String::Strip - rozszerzenie Perla do szybkich, często używanych operacji na łańcuchach
 Name:		perl-String-Strip
 Version:	1.01
 Release:	4
