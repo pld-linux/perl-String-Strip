@@ -44,6 +44,7 @@ szybsze od odpowiadających im metod używających wyrażeń regularnych.
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
