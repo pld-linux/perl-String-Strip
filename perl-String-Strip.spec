@@ -13,8 +13,9 @@ Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/String/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a1471ad67dbb7375dd0d288026ee7122
+URL:		http://search.cpan.org/dist/String-Strip/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -60,9 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{perl_vendorarch}/%{pdir}/*.pm
-%dir %{perl_vendorarch}/auto/%{pdir}/%{pnam}
-%attr(755,root,root) %{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.so
-%{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.ix
-%{perl_vendorarch}/auto/%{pdir}/%{pnam}/*.bs
+%{perl_vendorarch}/String/*.pm
+%dir %{perl_vendorarch}/auto/String/Strip
+%attr(755,root,root) %{perl_vendorarch}/auto/String/Strip/*.so
+%{perl_vendorarch}/auto/String/Strip/*.ix
+%{perl_vendorarch}/auto/String/Strip/*.bs
 %{_mandir}/man3/*
