@@ -9,7 +9,7 @@ Summary:	String::Strip - Perl extension for fast, commonly used, string operatio
 Summary(pl.UTF-8):	String::Strip - rozszerzenie Perla do szybkich, często używanych operacji na łańcuchach
 Name:		perl-String-Strip
 Version:	1.01
-Release:	10
+Release:	11
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
