@@ -65,5 +65,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/String/Strip
 %attr(755,root,root) %{perl_vendorarch}/auto/String/Strip/*.so
 %{perl_vendorarch}/auto/String/Strip/*.ix
-%{perl_vendorarch}/auto/String/Strip/*.bs
 %{_mandir}/man3/*
