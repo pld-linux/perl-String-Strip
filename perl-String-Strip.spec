@@ -8,13 +8,13 @@
 Summary:	String::Strip - Perl extension for fast, commonly used, string operations
 Summary(pl.UTF-8):	String::Strip - rozszerzenie Perla do szybkich, często używanych operacji na łańcuchach
 Name:		perl-String-Strip
-Version:	1.01
-Release:	18
+Version:	1.02
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/String/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a1471ad67dbb7375dd0d288026ee7122
+# Source0-md5:	af9e625b14729d3c66b3a78a208ae85c
 URL:		http://search.cpan.org/dist/String-Strip/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
